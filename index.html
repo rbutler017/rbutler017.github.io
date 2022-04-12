@@ -1,37 +1,82 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <!-- HTML Codes by Quackit.com -->
 <title>
-Ryan's Astro Webpage
+Ryan's Spectacular 1990s Webpage
 </title>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.button {
-        padding: none;
-        border: none; font-size: 16px;    }
-body {background-color:#ffffff;background-image:url(https://i.imgur.com/u3rpZZY.png);background-repeat:repeat;background-position:top left;background-attachment:fixed;}
-h1{font-family:'Times New Roman', Times, serif;color:#000000;}
-p {font-family:'Times New Roman', Times, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;}
+body {background-color:#ffffff;background-image:url(https://i.imgur.com/XK2HC0p.png);background-repeat:repeat;background-position:top left;background-attachment:fixed;}
+h1{font-family:Cursive, sans-serif;color:#000000;}
+p {font-family:Cursive, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;}
 </style>
 </head>
 <body>
-<h1>Welcome to the personal webpage of Ryan W. Butler</h1>
-<img src="https://i.imgur.com/sXwxKw1.jpeg" alt="Ryan Butler" align="right" width="150" height="204">
-<p>Hello! I'm Ryan Butler, a first year MS student in RIT's astrophysical sciences and technology program.    
-</p>
-<p>I did my undergraduate degree in physics and mathematics at Alfred University. While their I spent a lot of 
-    time at Stull Observatory observing (or attemempting to observe) exoplanet transits.
-</p>
-<p>I currently work on nearby young stars with Dr. Joel Kastner. These are stars within 100 pc of the sun and of ages less than 
-    50 or so Myr. At present I am working on producing X-ray SEDs of several of candidate stars observed by Chandra as part of the 
-    NYSCATS program.
-</p>
-<p>Below are buttons to take you to the other areas of this site. Have fun exploring.</p>
-<button class="button" onclick="window.location.href = 'froggy.html';"><img src="https://i.imgur.com/wB89n3Z.png"></button>
+<h1>Welcome to the personal webpage of </h1>
+<h1><marquee width="600">Ryan W. Butler, </h1></marquee>
+<h1>certified feudal system supporter and uncertified astronomer </h1>
+<p>Hello. Once again allow me to welcome you to my frogtastic personal webpage. I do a lot of things, most of them are boring and can be viewed in the curriculum vitae on the other page. I've put a few of the not boring things I'm interested in in a bulleted list below:</p>
+<ul>
+  <li>Frogs</li>
+  <li>The French Revolution</li>
+  <li>Looking for fossils in the woods</li>
+  <li>Gardening</li>
+  <li>Wallowing in despair over the collapse of East Germany</li>
+  <li>BBC Radio 4 Podcasts</li>
+  <li>Kantian Ethics</li>
+  <li>Drilling deep shale oil wells in my back yard</li>
+  <li>Board games</li>
+</ul>
+<p> I'm a big fan of frogs, are you? </p>
+<button type="button" onclick="alert('Ok.')">Yes!</button> <button type="button" onclick="alert('You have been sentenced to 50 years of hard labor in the Gulag. Think harder on that one next time.')">No!</button>
+<button class="GFG"
+onclick="window.location.href = 'https://images.nypl.org/index.php?id=1599690&t=w';">
+Frog with a gun.
+</button>
+<p>Here's a fun game that you can play on this webpage. I call it click the button. The goal is to click the button a lot of times. You should take great pride in 
+seeing the little number increase, I know I sure do. Enjoy this fun game! </p>
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<div id="sfc85fm95wt2u712x27z3dk8w115f2u2wq7"></div>
+<script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=85fm95wt2u712x27z3dk8w115f2u2wq7&down=async" async></script>
+<br><a href="https://www.freecounterstat.com"> </a><noscript><a href="https://www.freecounterstat.com" title=""><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=85fm95wt2u712x27z3dk8w115f2u2wq7" border="0" title="web hit counter" alt="web hit counter"></a></noscript>
+<h2>My 2040 Presidential Campaign</h2>
+<img src="https://acegif.com/wp-content/uploads/flag-america-usa.gif" alt="USA Flag">
+<p>I have a lot of big ideas on how to improve the United States of America, which is why I'm announcing my 2040 presidential bid well in advance.</p>
+<h3>My Platform</h3>
+<p>When elected President, I will enact the following 5 measures for the betterment of society</h3>
+<ol type="1">
+  <li>Rename the title of "President" to "Grand Marshal of the Republic" in addition to adjusting the term limit from 4 years to 1776 years to honor the nation</li>
+  <li>Liberate the unjustly held province of Quebec from Canada</li>
+  <li><marquee width="200">Reorganize the 50 states into 10732 special economic zones arbitrarily</marquee></li>
+  <li>War with England (it's overdue)</li>
+  <li>Build a new bicycle lane from the city center of Minot, North Dakota to the amtrack station</li>
+</ol>
+<p>This plan will rejuevinize the country. I look forward to seeing you all at the polls.</p>
+<p>Would you vote for me?</p>
+<button type="button" onclick="alert('Ok.')">Yes!</button> <button type="button" onclick="alert(':( I am going to cry')">No!</button>
 <br></br>
-<button class="button" onclick="myFunction()"><img src="https://i.imgur.com/uFEAgRh.png"></button>
-<br></br>
-<button class="button" onclick="myFunction()"><img src="https://i.imgur.com/SZabWTc.png"></button>
+<p>One more game for you</p>
+<button class="GFG"
+onclick="window.location.href = 'https:snake.html';">
+Click here for the fun game.
+</button>
 </body>
 </html>
